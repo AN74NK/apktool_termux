@@ -1,0 +1,9 @@
+#!/bin/bash
+# https://github.com/an74nk
+printf "[-] Installing apktool version 2.3.4\n"
+apt update -y > /dev/null 2>&1
+apt upgrade -y > /dev/null 2>&1
+pkg install git -y > /dev/null 2>&1
+dpkg -i apktool_2.3.4_all.deb
+printf "[+] Installing apktool successfully\n"
+printf "[+] Run: apktool\n"
